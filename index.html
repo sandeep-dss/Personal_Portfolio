@@ -14,14 +14,14 @@
     <nav class="bg-white border-gray-200 sticky bg-white top-0 z-10">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto my-4 p-4">
           <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-              <img src="./assets/Batman-Logo.png" class="h-8" alt="Logo" />
-              <span class="self-center text-base font-bold whitespace-nowrap md:text-xl">Sandeep Desaraju</span>
+              <img id="navimg" src="./assets/Batman-Logo.png" class="h-8" alt="Logo" />
+              <span id="navhead" class="self-center text-base font-bold whitespace-nowrap md:text-xl">Sandeep Desaraju</span>
           </a>
           
           <div class="hidden text-xl font-bold w-auto md:block md:w-auto" id="navbar-default">
             <ul class="font-medium flex flex-col p-2 md:p-0 mt-4  rounded-lg  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:border-gray-700">
               <li>
-                <a  href="https://drive.google.com/uc?export=download&id=1-AUetUuBMY0eBwrDHXHqVPWqnNQ1Ez6A" class="block py-2 px-3 text-white bg-transparent rounded md:bg-transparent md:text-black md:p-0 dark:text-white md:dark:text-black" aria-current="page">Resume</a>
+                <a id="navitem" href="https://drive.google.com/uc?export=download&id=1-AUetUuBMY0eBwrDHXHqVPWqnNQ1Ez6A" class="block py-2 px-3 text-white bg-transparent rounded md:bg-transparent md:text-black md:p-0 dark:text-white md:dark:text-black" aria-current="page">Resume</a>
               </li>
               
             </ul>
@@ -30,31 +30,32 @@
       </nav>
 
       <div class="relative flex flex-col-reverse py-16 lg:pt-0 lg:flex-col lg:pb-0">
-        <div class="inset-y-0 top-0 right-0 z-0 w-full max-w-xl px-4 mx-auto md:px-0 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-7/12 lg:max-w-full lg:absolute xl:px-0">
-          <svg class="absolute left-0 hidden h-full text-white transform -translate-x-1/2 lg:block" viewBox="0 0 100 100" fill="currentColor" preserveAspectRatio="none slice">
+        <div class="inset-y-0 top-0 right-0 z-0 w-full max-w-xl px-4 mx-auto overflow-hidden md:px-0 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-7/12 lg:max-w-full lg:absolute xl:px-0">
+          <svg class="absolute left-0 hidden z-10 h-full text-white transform -translate-x-1/2 lg:block" viewBox="0 0 100 100" fill="currentColor" preserveAspectRatio="none slice">
             <path d="M50 0H100L50 100H0L50 0Z"></path>
           </svg>
           <img
-            class="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
+            id="heroimg"
+            class="object-cover w-full h-56 rounded shadow-lg overflow-hidden lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
             src="./assets/DSC_0369.JPG"
             alt=""
           />
         </div>
-        <div class="relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl">
+        <div class="relative flex flex-col items-start w-full max-w-xl px-4 mx-auto overflow-hidden md:px-0 lg:px-8 lg:max-w-screen-xl">
           <div class="mb-16 lg:my-40 lg:max-w-lg lg:pr-5">
-            <p class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-400">
+            <p id="jobstatus" class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-400">
               Open to Work
             </p>
-            <h2 class="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+            <h2 id="name" class="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
               Sandeep Desaraju<br class="hidden md:block" />
               
               <span class="inline-block text-base text-deep-purple-accent-400">Software Developer 👨‍💻</span>
             </h2>
-            <p class="pr-5 mb-5 text-base text-gray-700 md:text-lg">
+            <p id="herotext" class="pr-5 mb-5 text-base text-gray-700 md:text-lg">
             Hey There 👋! <br class="hidden md:block" /> I'm Sandeep, a software developer building amazing software experiences for people around the world from the city of pearls Hyderabad, India 
             </p>
             <div class="flex items-center">
-              <a
+              <a id="downloadbtn"
                 href="https://drive.google.com/uc?export=download&id=1-AUetUuBMY0eBwrDHXHqVPWqnNQ1Ez6A"
                 class="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-gray-800 hover:bg-gray-700 focus:shadow-outline focus:outline-none"
               >
@@ -68,7 +69,7 @@
 
 
       <!-- skills section -->
-<div class='flex min-h-screen items-center justify-center min-h-screen px-20'>
+<div class='flex min-h-screen items-baseline justify-center min-h-screen mt-16 px-20'>
   <div>
       <div class="group relative -ml-4 flex scroll-mt-40 items-center pl-4">
       
@@ -134,8 +135,8 @@
 <!-- Work EXp -->
 
 <section class="text-gray-600 body-font">
-  <h1 class="text-2xl  font-bold text-black mx-7 mt-16 md:mx-24 md:text-3xl">My Work Experience :</h1>
-  <div class="container px-5 py-24 mx-auto flex flex-wrap">
+  <h1 class="text-2xl  font-bold text-black mx-7 mt-6 md:mx-24 md:text-3xl">My Work Experience :</h1>
+  <div class="container px-5 py-16 mx-auto flex flex-wrap">
     <div class="flex flex-wrap -mx-4 mt-auto mb-auto lg:w-1/2 sm:w-2/3 content-start sm:pr-10">
       <div class="w-full sm:p-4 px-4 mb-6">
         <h1 class="title-font font-medium text-xl mb-2 text-gray-900">Neural Foundry 🤖 (SPA Enterprise Info Services)</h1>
@@ -176,7 +177,7 @@
         First projects are always made with utmost dedication and I love to showcase them hinting my growth over the time.</p>
           
           <div class="flex">
-            <a class="title-font my-4 text-blue-400 font-medium text-base md:text-2xl" href="#">Check Out Project</a>
+            <a class="title-font my-4 text-blue-400 font-medium text-base md:text-2xl" href="https://github.com/sandeep-dss/CRUD-Books-App">Check Out Project</a>
           </div>
         </div>
       </div>
@@ -202,7 +203,7 @@
           </p>
           
           <div class="flex">
-            <a class="title-font text-green-400 font-medium text-base md:text-2xl" href="#">Check Out Project</a>
+            <a class="title-font text-green-400 font-medium text-base md:text-2xl" href="https://cars-app-jade.vercel.app">Check Out Project</a>
           </div>
         </div>
         <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="./assets/New Project.svg">
